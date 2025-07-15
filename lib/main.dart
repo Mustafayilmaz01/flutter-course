@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:full_learn/101/test_file.dart';
+import 'package:full_learn/101/container_sized_box_learn.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const TextLearnView(),
+
+      debugShowCheckedModeBanner: true,
+      title: 'Mustafa Yilmaz',
+      theme: ThemeData.dark(),
+      home: ContainerSizedBoxLearn(),
     );
   }
 }

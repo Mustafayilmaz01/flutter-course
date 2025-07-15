@@ -7,11 +7,14 @@ class TextLearnView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.green,
       body: Center(
         child: Text(
           'Buy The Best One ',
-          style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: Colors.yellow),
+          style: ProjectStyles.welcomeStyle.copyWith(
+            fontSize: Theme.of(context).textTheme.headlineSmall?.fontSize,
+            color: ProjectColor.welcomecolor,
+          ),
         ),
       ),
     );
@@ -26,4 +29,8 @@ class ProjectStyles {
     fontStyle: FontStyle.italic,
     color: Colors.blueGrey,
   );
+}
+
+class ProjectColor {
+  static Color welcomecolor = Colors.red; // ✅ Bu satır eksiksiz ve doğru olmalı
 }
