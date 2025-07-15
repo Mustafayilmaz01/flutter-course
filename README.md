@@ -1,16 +1,25 @@
-# full_learn
+# Flutter Course 🚀
 
-A new Flutter project.
+Bu repo, Flutter öğrenme sürecimde oluşturduğum projeleri ve örnekleri içerir.  
+Her commit ya da klasör bir dersi veya konuyu temsil eder.
 
-## Getting Started
+## 🎯 Hedef
+- Flutter widget'larını tanımak
+- Uygulama tasarımı ve state yönetimini öğrenmek
+- Mobil geliştirme becerilerini geliştirmek
 
-This project is a starting point for a Flutter application.
+## 🧰 Kullanılan Araçlar
+- Flutter & Dart
+- Visual Studio Code
+- Git & GitHub
 
-A few resources to get you started if this is your first Flutter project:
+## 📌 Dersler
+- ✅ Ders 1: Flutter Nedir
+- ⏳ Ders 2:  Scaffold, Text, Sizezdbox, Drawer
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Projeyi Çalıştırmak için
+```bash
+flutter pub get
+flutter run
+```
