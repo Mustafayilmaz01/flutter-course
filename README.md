@@ -16,8 +16,8 @@ Her commit ya da klasör bir dersi veya konuyu temsil eder.
 ## 📌 Dersler
 - ✅ Ders 1: Flutter Nedir
 - ✅Ders 2:  Scaffold, Text, Sizezdbox, Drawer
-- ⏳Flutter: #3 Button, ThemeData, Color sınıfı oluşturma ve detayları
-
+- ✅Flutter: #3 Button, ThemeData, Color sınıfı oluşturma ve detayları
+- ⏳Flutter: #4 Stateless widget, padding, card ve image widgetlar
 
 ## 🚀 Projeyi Çalıştırmak için
 ```bash
