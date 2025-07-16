@@ -16,7 +16,7 @@ class ScaffoldLearnView extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Home'
           ),
         ],
       ),
