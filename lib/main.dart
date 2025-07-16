@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:full_learn/101/test_file.dart';
 import 'package:full_learn/101/container_sized_box_learn.dart';
-
+import 'package:full_learn/101/scaffold_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      debugShowCheckedModeBanner: true,
-      title: 'Mustafa Yilmaz',
+      debugShowCheckedModeBanner: false, // true yerine false tercih edilir genelde
+      title: 'Mustafa Yılmaz',
       theme: ThemeData.dark(),
-      home: ContainerSizedBoxLearn(),
+      home: const ScaffoldLearnView(), // const eklendi, çünkü StatelessWidget
     );
   }
 }

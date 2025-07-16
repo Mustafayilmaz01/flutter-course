@@ -13,25 +13,31 @@ class ContainerSizedBoxLearn extends StatelessWidget {
             child: Text('Mustafa' * 500),
           ),
           SizedBox(
-            width: 250,
-            height: 250,
+            width: 25,
+            height: 25,
             child: Text('b' * 500),
           ),
           Container(
             width: 100,
             height: 100,
-            // color: Colors.red, // ❌ Bunu kaldırdık
             constraints: BoxConstraints(),
             child: Center(child: Text('Mustafa')),
             padding: EdgeInsets.all(10),
             margin: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.blue, // ✅ Renk buraya taşındı
-              border: Border.all(width: 10, color: Colors.white12),
+            decoration: ProjectUtility.boxDecoration
             ),
-          ),
+          
         ],
       ),
     );
   }
+}
+
+class ProjectUtility{
+  static BoxDecoration boxDecoration=BoxDecoration(
+       gradient: const LinearGradient(colors: [Colors.red,Colors.lime]),
+       border: Border.all(width: 10, color: Colors.white12)
+    
+  );
+
 }
