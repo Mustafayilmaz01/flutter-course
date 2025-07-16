@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ContainerSizedBoxLearn extends StatelessWidget {
+  const ContainerSizedBoxLearn({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,10 +23,11 @@ class ContainerSizedBoxLearn extends StatelessWidget {
             width: 100,
             height: 100,
             constraints: BoxConstraints(),
-            child: Center(child: Text('Mustafa')),
             padding: EdgeInsets.all(10),
             margin: EdgeInsets.all(10),
-            decoration: ProjectUtility.boxDecoration
+            decoration: ProjectUtility.boxDecoration,
+            child: Center(child: Text('Mustafa')
+            )
             ),
           
         ],

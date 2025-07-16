@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/101/color_learn.dart';
+import 'package:full_learn/101/card_learn.dart';
+import 'package:full_learn/101/image_learn.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +25,9 @@ class MyApp extends StatelessWidget {
 
         ),
       ),
-      home: const ColorLearnView(),
+      home: ImageLearn(
+
+      ),
     );
   }
 }
