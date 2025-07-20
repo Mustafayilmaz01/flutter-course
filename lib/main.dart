@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/101/stack_learn.dart';
-import 'package:full_learn/demos/stack_demo_view.dart';
-
+import 'package:full_learn/101/page_view_learn.dart';
+import 'package:full_learn/101/statefull_learn.dart';
+import 'package:full_learn/101/statefull_life_cycle_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,22 +16,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // true yerine false tercih edilir genelde
       title: 'Mustafa Yılmaz',
       theme: ThemeData.light().copyWith(
-        progressIndicatorTheme: ProgressIndicatorThemeData(
-          color: Colors.black,
-        ),
+        progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.black),
         appBarTheme: AppBarTheme(
           centerTitle: true,
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.white,
           actionsIconTheme: IconThemeData(color: Colors.black),
-          toolbarTextStyle: TextStyle(color: Colors.blueGrey),
-        
-
+          toolbarTextStyle: TextStyle(color: Colors.white),
         ),
       ),
-    
-      home: StackDemoView(
 
-      ),
+      home: StatefullLifeCycleLearn(message: "Mustafa"),
     );
   }
 }

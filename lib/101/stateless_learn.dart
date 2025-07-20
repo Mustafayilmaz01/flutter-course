@@ -13,9 +13,9 @@ class StatelessLearnView extends StatelessWidget {
         TitleTextWidget(),
                 TitleTextWidget(),
         TitleTextWidget(),
-        Container(
-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.red),
-        )
+        CustomContainer(),
+        _emptyBox()
+
 
         
 
@@ -26,6 +26,29 @@ class StatelessLearnView extends StatelessWidget {
    );
   }
 
+}
+
+// ignore: camel_case_types
+class _emptyBox extends StatelessWidget {
+  const _emptyBox();
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(height: 10,);
+  }
+}
+
+class CustomContainer extends StatelessWidget {
+  const CustomContainer({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.red),
+    );
+  }
 }
 class TitleTextWidget extends StatelessWidget {
   const TitleTextWidget({super.key,this.title});

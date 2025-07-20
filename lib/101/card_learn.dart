@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CardLearn extends StatelessWidget {
-  const CardLearn({Key? key}) : super(key: key);
+  const CardLearn({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,21 +11,21 @@ class CardLearn extends StatelessWidget {
         children: [
           Card(
             margin: ProjectMargins.cardMargin,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             child: const SizedBox(
               height: 100,
               width: 300,
               child: Center(child: Text('Ali')),
             ),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           ),
           Card(
             margin: ProjectMargins.cardMargin,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             child: const SizedBox(
               height: 100,
               width: 300,
               child: Center(child: Text('Ali')),
             ),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           ),
           _CustomCard(
               child: const SizedBox(
@@ -48,7 +48,7 @@ class ProjectMargins {
 //  StadiumBorder(),CircleBorder(),RoundedRectangeBorder()
 
 class _CustomCard extends StatelessWidget {
-  _CustomCard({Key? key, required this.child}) : super(key: key);
+  _CustomCard({required this.child});
   final Widget child;
   final roundedRectangleBorder = RoundedRectangleBorder(borderRadius: BorderRadius.circular(20));
 

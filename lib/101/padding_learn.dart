@@ -30,6 +30,6 @@ class PaddingLearn extends StatelessWidget {
 
 }
 class ProjectPadding {
-  static const pagePaddingVertical = const EdgeInsets.all(16.0);
-  static const pagePaddingRightOnly= const EdgeInsets.only(left: 30.0);
+  static const pagePaddingVertical = EdgeInsets.all(16.0);
+  static const pagePaddingRightOnly= EdgeInsets.only(left: 30.0);
 }
