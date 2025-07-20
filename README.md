@@ -20,7 +20,7 @@ Her commit ya da klasör bir dersi veya konuyu temsil eder.
 - ✅Flutter: #4 Stateless widget, padding, card ve image widgetlar
 - ✅Flutter:#4.2 Error builder, özel ekran tasarımı, extract method
 - ✅Flutter:#5 Özel widget geliştirme, Row, Expanded Indicator
-- ⏳Flutter: #6 Statefull Widget, Yaşam döngüsü, PageView ve Textfield etc.
+- ⏳Flutter: #6 Statefull Widget, Yaşam döngüsü, PageView ve Textfield etc. 58:20'de Kaldım.
 
 ## 🚀 Projeyi Çalıştırmak için
 ```bash
