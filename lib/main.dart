@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/101/card_learn.dart';
-import 'package:full_learn/101/image_learn.dart';
+import 'package:full_learn/101/stack_learn.dart';
+import 'package:full_learn/demos/stack_demo_view.dart';
 
 
 void main() {
@@ -16,16 +16,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // true yerine false tercih edilir genelde
       title: 'Mustafa Yılmaz',
       theme: ThemeData.light().copyWith(
+        progressIndicatorTheme: ProgressIndicatorThemeData(
+          color: Colors.black,
+        ),
         appBarTheme: AppBarTheme(
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.black,
           actionsIconTheme: IconThemeData(color: Colors.black),
           toolbarTextStyle: TextStyle(color: Colors.blueGrey),
         
 
         ),
       ),
-      home: ImageLearn(
+    
+      home: StackDemoView(
 
       ),
     );
