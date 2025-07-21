@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/101/stack_learn.dart';
-import 'package:full_learn/101/statefull_life_cycle_learn.dart';
-import 'package:full_learn/101/stateless_learn.dart';
-import 'package:full_learn/101/text_field_learn.dart';
-import 'package:full_learn/demos/color_demos_view.dart';
-import 'package:full_learn/demos/color_life_cycle_view.dart';
+import 'package:full_learn/101/list_view_builder.dart';
+import 'package:full_learn/101/list_view_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +30,7 @@ class MyApp extends StatelessWidget {
           labelStyle: TextStyle(color: Colors.blue),
         ),
       ),
-      home: ColorLifeCycleView(),
+      home: ListViewBuilderLearn(),
     );
   }
 }
