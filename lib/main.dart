@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/101/page_view_learn.dart';
-import 'package:full_learn/101/statefull_learn.dart';
+import 'package:full_learn/101/stack_learn.dart';
 import 'package:full_learn/101/statefull_life_cycle_learn.dart';
+import 'package:full_learn/101/stateless_learn.dart';
+import 'package:full_learn/101/text_field_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,19 +14,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // true yerine false tercih edilir genelde
+      debugShowCheckedModeBanner: false,
       title: 'Mustafa Yılmaz',
       theme: ThemeData.light().copyWith(
-        progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.black),
-        appBarTheme: AppBarTheme(
+        progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.black),
+        appBarTheme: const AppBarTheme(
           centerTitle: true,
           backgroundColor: Colors.white,
           actionsIconTheme: IconThemeData(color: Colors.black),
           toolbarTextStyle: TextStyle(color: Colors.white),
         ),
+        inputDecorationTheme: const InputDecorationTheme(
+          filled: true,
+          fillColor: Colors.black,
+          prefixIconColor: Colors.red,
+          border: OutlineInputBorder(),
+          labelStyle: TextStyle(color: Colors.blue),
+        ),
       ),
-
-      home: StatefullLifeCycleLearn(message: "Mustafa"),
+      home: TextFieldLearn(),
     );
   }
 }

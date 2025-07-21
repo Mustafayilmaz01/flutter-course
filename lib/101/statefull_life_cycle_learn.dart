@@ -42,6 +42,12 @@ class _StatefullLifeCycleLearnState extends State<StatefullLifeCycleLearn> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    print('Alo');
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: _isOdd ? Text('Kelime Tek') : Text('Kelime Cift')),
