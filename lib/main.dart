@@ -3,6 +3,8 @@ import 'package:full_learn/101/stack_learn.dart';
 import 'package:full_learn/101/statefull_life_cycle_learn.dart';
 import 'package:full_learn/101/stateless_learn.dart';
 import 'package:full_learn/101/text_field_learn.dart';
+import 'package:full_learn/demos/color_demos_view.dart';
+import 'package:full_learn/demos/color_life_cycle_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,13 +28,13 @@ class MyApp extends StatelessWidget {
         ),
         inputDecorationTheme: const InputDecorationTheme(
           filled: true,
-          fillColor: Colors.black,
+          fillColor: Colors.blueGrey,
           prefixIconColor: Colors.red,
           border: OutlineInputBorder(),
           labelStyle: TextStyle(color: Colors.blue),
         ),
       ),
-      home: TextFieldLearn(),
+      home: ColorLifeCycleView(),
     );
   }
 }

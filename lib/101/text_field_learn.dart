@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class TextFieldLearn extends StatefulWidget {
+  const TextFieldLearn({super.key});
+
   @override
   State<TextFieldLearn> createState() => _TextFieldLearnState();
 }
