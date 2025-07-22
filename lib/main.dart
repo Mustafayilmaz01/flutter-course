@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/101/navigation_learn.dart';
-
-import 'package:full_learn/demos/my_collection_demo.dart';
+import 'package:full_learn/202/model_learn_view.dart';
+import 'package:full_learn/202/tab_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Mustafa Yılmaz',
       theme: ThemeData.light().copyWith(
+        tabBarTheme: TabBarThemeData(indicatorColor: Colors.blue, labelColor: Colors.white),
         progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.black),
         appBarTheme: const AppBarTheme(
           centerTitle: true,
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           labelStyle: TextStyle(color: Colors.blue),
         ),
       ),
-      home: NavigationLearn(),
+      home: ModelLearnView(),
     );
   }
 }
