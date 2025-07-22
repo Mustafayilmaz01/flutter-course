@@ -22,7 +22,8 @@ Her commit ya da klasör bir dersi veya konuyu temsil eder.
 - ✅Flutter:#5 Özel widget geliştirme, Row, Expanded Indicator
 - ✅Flutter: #6 Statefull Widget, Yaşam döngüsü, PageView ve Textfield etc.  
 - ✅Flutter:#7 List, Debug, Navigation giriş 
-- ⏳Flutter:#8 Tab tabbar, nullable, model oluşturma
+- ✅Flutter:#8 Tab tabbar, nullable, model oluşturma///cok anlamadım
+- ⏳Flutter: #9 Servis kullanımı, detaylar, future, try catch etc
 
 ## 🚀 Projeyi Çalıştırmak için
 ```bash
