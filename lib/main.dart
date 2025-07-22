@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/101/list_view_builder.dart';
-import 'package:full_learn/101/list_view_learn.dart';
+import 'package:full_learn/101/navigation_learn.dart';
+
+import 'package:full_learn/demos/my_collection_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
           labelStyle: TextStyle(color: Colors.blue),
         ),
       ),
-      home: ListViewBuilderLearn(),
+      home: NavigationLearn(),
     );
   }
 }
