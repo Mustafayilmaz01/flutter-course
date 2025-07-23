@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/202/model_learn_view.dart';
-import 'package:full_learn/202/tab_learn.dart';
+import 'package:full_learn/202/service/service_post_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
           labelStyle: TextStyle(color: Colors.blue),
         ),
       ),
-      home: ModelLearnView(),
+      home: ServicePostLearnView(),
     );
   }
 }

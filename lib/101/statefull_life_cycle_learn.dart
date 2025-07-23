@@ -15,12 +15,14 @@ class _StatefullLifeCycleLearnState extends State<StatefullLifeCycleLearn> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     //_computeName;
+    // ignore: avoid_print
     print('c');
   }
 
   @override
   void didUpdateWidget(covariant StatefullLifeCycleLearn oldWidget) {
     super.didUpdateWidget(oldWidget);
+    // ignore: avoid_print
     print('b');
   }
 
@@ -30,6 +32,7 @@ class _StatefullLifeCycleLearnState extends State<StatefullLifeCycleLearn> {
     _message = widget.message;
     _isOdd = widget.message.length.isOdd;
     _computeName();
+    // ignore: avoid_print
     print('a');
   }
 
@@ -44,7 +47,6 @@ class _StatefullLifeCycleLearnState extends State<StatefullLifeCycleLearn> {
   @override
   void dispose() {
     super.dispose();
-    print('Alo');
   }
 
   @override

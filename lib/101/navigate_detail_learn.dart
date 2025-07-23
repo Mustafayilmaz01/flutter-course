@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NavigateDetailLearnDart extends StatefulWidget {
-  const NavigateDetailLearnDart({Key? key, this.isOkey = false}) : super(key: key);
+  const NavigateDetailLearnDart({super.key, this.isOkey = false});
   final bool isOkey;
   @override
   State<NavigateDetailLearnDart> createState() => _NavigateLearnDartState();

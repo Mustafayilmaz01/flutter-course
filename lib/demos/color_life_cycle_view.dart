@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:full_learn/demos/color_demos_view.dart';
 
 class ColorLifeCycleView extends StatefulWidget {
+  const ColorLifeCycleView({super.key});
+
   @override
   State<ColorLifeCycleView> createState() => _ColorLifeCycleViewState();
 }

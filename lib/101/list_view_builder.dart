@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListViewBuilderLearn extends StatefulWidget {
-  const ListViewBuilderLearn({Key? key}) : super(key: key);
+  const ListViewBuilderLearn({super.key});
 
   @override
   State<ListViewBuilderLearn> createState() => _ListViewBuilderLearnState();

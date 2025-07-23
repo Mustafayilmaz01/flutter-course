@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyCollectionDemos extends StatefulWidget {
+  const MyCollectionDemos({super.key});
+
   @override
   State<MyCollectionDemos> createState() => _MyCollectionDemosState();
 }
