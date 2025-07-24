@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:full_learn/202/service/service_post_learn_view.dart';
+import 'package:full_learn/202/animated_learn.dart';
+import 'package:full_learn/202/oop_learn_view.dart';
+import 'package:full_learn/202/theme/light_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,24 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Mustafa Yılmaz',
-      theme: ThemeData.light().copyWith(
-        tabBarTheme: TabBarThemeData(indicatorColor: Colors.blue, labelColor: Colors.white),
-        progressIndicatorTheme: const ProgressIndicatorThemeData(color: Colors.black),
-        appBarTheme: const AppBarTheme(
-          centerTitle: true,
-          backgroundColor: Colors.white,
-          actionsIconTheme: IconThemeData(color: Colors.black),
-          toolbarTextStyle: TextStyle(color: Colors.white),
-        ),
-        inputDecorationTheme: const InputDecorationTheme(
-          filled: true,
-          fillColor: Colors.blueGrey,
-          prefixIconColor: Colors.red,
-          border: OutlineInputBorder(),
-          labelStyle: TextStyle(color: Colors.blue),
-        ),
-      ),
-      home: ServicePostLearnView(),
+      theme: LightTheme().theme,
+
+      home: OopLearnView(),
     );
   }
 }
